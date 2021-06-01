@@ -1,0 +1,320 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "setIcon",
+			"inputs": [
+				{"name":"icon","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setLotteryAddress",
+			"inputs": [
+				{"name":"lotteryAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onError",
+			"inputs": [
+				{"name":"sdkError","type":"uint32"},
+				{"name":"exitCode","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "start",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onAddressInput",
+			"inputs": [
+				{"name":"nanotokens","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDebotInfo",
+			"id": "0xDEB",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"name","type":"bytes"},
+				{"name":"version","type":"bytes"},
+				{"name":"publisher","type":"bytes"},
+				{"name":"key","type":"bytes"},
+				{"name":"author","type":"bytes"},
+				{"name":"support","type":"address"},
+				{"name":"hello","type":"bytes"},
+				{"name":"language","type":"bytes"},
+				{"name":"dabi","type":"bytes"},
+				{"name":"icon","type":"bytes"}
+			]
+		},
+		{
+			"name": "getRequiredInterfaces",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"interfaces","type":"uint256[]"}
+			]
+		},
+		{
+			"name": "startChecks",
+			"inputs": [
+				{"name":"value","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkStatus",
+			"inputs": [
+				{"name":"acc_type","type":"int8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getLotteryInfo",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getLotteryInfo",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setLotteryInfo",
+			"inputs": [
+				{"components":[{"name":"version","type":"bytes"},{"name":"usersStorage","type":"address"},{"name":"gamesHistory","type":"address"},{"name":"gameAddress","type":"address"}],"name":"info","type":"tuple"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getUsersCount",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setUsersCount",
+			"inputs": [
+				{"name":"usersCount","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getGamesCount",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setGamesCount",
+			"inputs": [
+				{"name":"gamesCount","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getGamesHistory",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getGamesCountForHistory",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getGamesHistory",
+			"inputs": [
+				{"name":"gamesCount","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setGamesHistory",
+			"inputs": [
+				{"name":"games","type":"address[]"},
+				{"name":"winners","type":"address[]"},
+				{"name":"rewards","type":"uint128[]"},
+				{"name":"amounts","type":"uint128[]"},
+				{"name":"counts","type":"uint64[]"},
+				{"name":"totalLength","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getGameInfo",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getGameInfo",
+			"inputs": [
+				{"name":"nanotokens","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setGameInfo",
+			"inputs": [
+				{"components":[{"name":"depositAmount","type":"uint128"},{"name":"rewardAmount","type":"uint128"},{"name":"depositCount","type":"uint64"},{"name":"minCount","type":"uint32"},{"name":"gameChance","type":"uint32"}],"name":"info","type":"tuple"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getGameDeposits",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getGameDeposits",
+			"inputs": [
+				{"name":"nanotokens","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setGameDeposits",
+			"inputs": [
+				{"name":"owners","type":"address[]"},
+				{"name":"deposits","type":"uint128[]"},
+				{"name":"totalLength","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "placeBet",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setTons",
+			"inputs": [
+				{"name":"value","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onSuccessTransaction",
+			"inputs": [
+				{"name":"transId","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "submitTransaction",
+			"inputs": [
+				{"name":"value","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_getGameAddress",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getGameRules",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_menu",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "upgrade",
+			"inputs": [
+				{"name":"newcode","type":"cell"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDebotOptions",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"options","type":"uint8"},
+				{"name":"debotAbi","type":"bytes"},
+				{"name":"targetAbi","type":"bytes"},
+				{"name":"targetAddr","type":"address"}
+			]
+		},
+		{
+			"name": "setABI",
+			"inputs": [
+				{"name":"dabi","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
